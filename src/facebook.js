@@ -120,6 +120,7 @@ class FacebookLogin extends React.Component {
 
   sdkLoaded() {
     this.setState({ isSdkLoaded: true });
+    if (this.props.onLoad) this.props.onLoad();
   }
 
   loadSdkAsynchronously() {
