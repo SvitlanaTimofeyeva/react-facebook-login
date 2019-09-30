@@ -29,6 +29,7 @@ class Base extends Component {
           <FacebookLogin
             appId="1088597931155576"
             autoLoad
+            onLoad={() => console.log("ONLOAD")}
             callback={responseFacebook}
             render={renderProps => (
               <button onClick={renderProps.onClick}>This is my custom FB button</button>
